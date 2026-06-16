@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Marcellus&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Marcellus", "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-gold-50: #fbf7eb;
+  --color-gold-100: #f4e9cc;
+  --color-gold-200: #ead29c;
+  --color-gold-300: #dfb768;
+  --color-gold-400: #d69c3a;
+  --color-gold-500: #c5811e;
+  --color-gold-600: #a76515;
+  --color-gold-700: #834a10;
+  --color-maroon-50: #fff1f2;
+  --color-maroon-100: #ffe4e6;
+  --color-maroon-200: #fecdd3;
+  --color-maroon-300: #fda4af;
+  --color-maroon-400: #fb7185;
+  --color-maroon-500: #f43f5e;
+  --color-maroon-600: #e11d48;
+  --color-maroon-700: #be123c;
+  --color-maroon-800: #9f1239;
+  --color-maroon-900: #881337;
+  --color-maroon-950: #4c0519;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0305;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5811e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d69c3a;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism glass card */
+.glass {
+  background: rgba(76, 5, 25, 0.2); /* Soft crimson glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 129, 30, 0.25); /* Golden glow border */
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(197, 129, 30, 0.15);
+}
+
+.glass-dark {
+  background: rgba(15, 3, 5, 0.82); /* Deep ethnic wood / dark crimson */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 129, 30, 0.22);
+}
+
+/* Golden text and borders */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f4e9cc 0%, #dfb768 50%, #c5811e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #dfb768 0%, #c5811e 50%, #834a10 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #dfb768, #c5811e, #834a10) 1;
+}
+
+/* Mandap/Indian classic arch motif style */
+.arch-card {
+  border-radius: 50% 50% 0 0 / 18% 18% 0 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 10px rgba(197, 129, 30, 0.2); }
+  50% { box-shadow: 0 0 22px rgba(197, 129, 30, 0.5); }
+}
+
+.pulse-gold-glow {
+  animation: pulse-gold 3s infinite;
+}

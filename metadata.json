@@ -1,0 +1,6 @@
+{
+  "name": "Namma Ooru Premium Tourism & Travel Guidance",
+  "description": "Ultra-luxury Indian tourism and travel guidance experience showcasing beautiful scenic destinations, local native feast gastronomy, and bespoke adventure route planners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
